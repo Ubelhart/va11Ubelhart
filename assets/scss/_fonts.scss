@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(180deg, rgba(241,248,242,1) 0%, rgba(222,228,223,1) 100%);
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: $espacio;
+  overflow-y: scroll;
+}
+main {
+  padding: $espacio;
+}
+h1 {
+  color: $colorPrimario;
+  font-size: 4rem;
+  animation-name: titulo;
+  animation-duration: 800ms;
+}
+h2 {
+  color: $colorSecundario;
+  font-size: 3.4rem;
+  animation-name: subtitulo;
+  animation-duration: 800ms;
+}
+h3 {
+  color: $colorPrimario;
+  font-size: 2.8rem;
+  animation-name: subtitulo2;
+  animation-duration: 800ms;
+}
+p {
+  font-size: 2.2rem;
+  text-align: center;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: $espacio;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul, p {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+@keyframes titulo {
+  from{
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes subtitulo {
+  from {
+    font-size: 3.7rem;
+  }
+  to {
+    font-size: none;
+  }
+}
+@keyframes subtitulo2 {
+  from {
+    color: $colorSecundarioClaro;
+  }
+  to {
+    display: $colorPrimario;
+  }
+}
