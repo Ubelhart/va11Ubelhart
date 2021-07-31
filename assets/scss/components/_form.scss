@@ -19,24 +19,12 @@
   &__campo--botones {
     gap: $espacio;
   }
-  &__boton {
-    padding: $espacio / 1.2;
-    border: none;
-    border-radius: 0.3em;
-    background-color: $colorPrimarioClaro;
-    color: #f1f8f2;
-    transition: all 250ms;
-    &:hover {
-      padding: $espacio;
-      background-color: $colorPrimario;
-    }
-  }
   @media only screen and (min-width: 768px) {
     width: 70vw;
     &__campo--botones {
       flex-direction: row;
     }
-    &__boton {
+    .boton {
       width: 50%;
     }
   }
@@ -45,7 +33,7 @@
     &__campo--botones {
       justify-content: flex-end;
     }
-    &__boton {
+    .boton {
       width: 25%;
     }
   }
