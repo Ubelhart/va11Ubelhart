@@ -219,7 +219,7 @@ header {
     header nav {
       width: 40%; } }
 
-.footer {
+footer {
   font-weight: 700;
   background: linear-gradient(90deg, #5dbda4 0%, #40ba9a 34%, #29c29a 66%, #00ba8a 100%);
   display: flex;
@@ -227,23 +227,23 @@ header {
   align-items: center;
   gap: 0.5em;
   padding: 0.5em; }
-  .footer .mapa__titulo {
+  footer .mapa h3 {
     margin: 0;
     margin-bottom: 0.25em; }
-  .footer .mapa__link {
+  footer .mapa a {
     font-weight: 400; }
-  .footer .mapa__link:hover {
+  footer .mapa a:hover {
     color: #000; }
-  .footer__parrafo {
+  footer p {
     font-size: 1.6rem; }
   @media only screen and (min-width: 768px) {
-    .footer {
+    footer {
       flex-direction: row;
       justify-content: space-between; }
-      .footer__links {
+      footer .links {
         display: flex; } }
   @media only screen and (min-width: 992px) {
-    .footer {
+    footer {
       justify-content: space-around; } }
 
 .boton {
