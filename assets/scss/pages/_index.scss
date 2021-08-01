@@ -1,0 +1,35 @@
+.inicio {
+  &__parrafo {
+    background-color: $colorSecundarioClaro;
+    padding: $espacio / 2;
+    border-radius: 0 1em;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+    &--borde {
+      border-radius: 1em 0;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    &__seccion {
+    display: flex;
+    align-items: center;
+    gap: $espacio;
+    }
+    &__seccion--dos {
+    flex-direction: row-reverse;
+    }
+    &__calesita,
+    &__parrafo {
+      flex-basis: 50%;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    display: flex;
+    gap: $espacio;
+    &__secciones {
+      flex-basis: 50%;
+    }
+    &__seccion {
+      flex-direction: column;
+    }
+  }
+}

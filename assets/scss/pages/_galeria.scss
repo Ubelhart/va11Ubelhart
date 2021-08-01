@@ -1,0 +1,28 @@
+.galeria {
+  overflow: hidden;
+  &__contenedor {
+    display: grid;
+    justify-content: center;
+    gap: $espacio;
+    }
+  &__imagen{
+    transition: all 500ms;
+    &:hover {
+      transform: scale(1.2);
+      z-index: 1;
+    }
+  }
+    &__cuerpo {
+      background-color: $colorPrimarioClaro;
+    }
+  @media only screen and (min-width: 768px) {
+    &__contenedor {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    &__contenedor {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

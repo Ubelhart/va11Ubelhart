@@ -1,10 +1,14 @@
 @import 'reset';
-@import 'variables';
-@import 'fonts';
 
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/layout';
+@import 'layout/variables';
+@import 'layout/fonts';
 
+@import 'pages/index';
+@import 'pages/galeria';
+@import 'pages/videos';
+@import 'pages/precios';
+
+@import 'components/header';
+@import 'components/footer';
 @import 'components/buttons';
 @import 'components/form';

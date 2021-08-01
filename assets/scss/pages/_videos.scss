@@ -1,0 +1,36 @@
+@mixin medidas( $ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
+.videos {
+  display: grid;
+  gap: $espacio / 2;
+  &__seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $colorSecundarioClaro;
+    border-radius: 1em;
+  }
+  &__video {
+    @include medidas(426px, 240px);
+  }
+  @media only screen and (min-width: 768px ) {
+    &__video {
+      @include medidas(640px, 360px);
+    }
+  }
+  @media only screen and (min-width: 992px ) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "video1 video2"
+                                      "video3 video3";
+    justify-items: center;
+    &__seccion--tres {
+      grid-area: video3;
+      width: 50%;
+    }
+    &__video {
+      @include medidas(475px, 270px);
+    }
+  }
+}
