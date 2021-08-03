@@ -1,27 +1,27 @@
-.formulario {
+form {
   width: 85vw;
   margin: 0 auto;
-  &__cuadro{
-    @extend .formulario__campo;
+  .cuadro{
+    @extend .cuadro__campo;
     padding: $espacio * 1.5;
     gap: $espacio;
     border: 3px double $colorPrimario;
     border-radius: 0.3em;
-  }
-  &__campo {
-    display: flex;
-    flex-direction: column;
-  }
-  &__select {
-    padding: $espacio / 15.8 0;
-    border-radius: 0.3em;
-  }
-  &__campo--botones {
-    gap: $espacio;
+    &__campo {
+      display: flex;
+      flex-direction: column;
+    }
+    &__select {
+      padding: $espacio / 15.8 0;
+      border-radius: 0.3em;
+    }
+    &__campo--botones {
+      gap: $espacio;
+    }
   }
   @media only screen and (min-width: 768px) {
     width: 70vw;
-    &__campo--botones {
+    .cuadro__campo--botones {
       flex-direction: row;
     }
     .boton {
@@ -30,7 +30,7 @@
   }
   @media only screen and (min-width: 992px) {
     width: 55vw;
-    &__campo--botones {
+    .cuadro__campo--botones {
       justify-content: flex-end;
     }
     .boton {

@@ -167,7 +167,7 @@ ul, p {
   padding: 1em;
   list-style-position: inside;
   justify-items: center; }
-  .tabla__titulo {
+  .tabla h2 {
     margin: 0;
     border: 3px solid;
     padding: 0.5em; }
@@ -257,33 +257,33 @@ footer {
     padding: 1em;
     background-color: #721500; }
 
-.formulario {
+form {
   width: 85vw;
   margin: 0 auto; }
-  .formulario__cuadro {
+  form .cuadro {
     padding: 1.5em;
     gap: 1em;
     border: 3px double #721500;
     border-radius: 0.3em; }
-  .formulario__campo, .formulario__cuadro {
-    display: flex;
-    flex-direction: column; }
-  .formulario__select {
-    padding: 0.06329em 0;
-    border-radius: 0.3em; }
-  .formulario__campo--botones {
-    gap: 1em; }
+    form .cuadro__campo, form .cuadro {
+      display: flex;
+      flex-direction: column; }
+    form .cuadro__select {
+      padding: 0.06329em 0;
+      border-radius: 0.3em; }
+    form .cuadro__campo--botones {
+      gap: 1em; }
   @media only screen and (min-width: 768px) {
-    .formulario {
+    form {
       width: 70vw; }
-      .formulario__campo--botones {
+      form .cuadro__campo--botones {
         flex-direction: row; }
-      .formulario .boton {
+      form .boton {
         width: 50%; } }
   @media only screen and (min-width: 992px) {
-    .formulario {
+    form {
       width: 55vw; }
-      .formulario__campo--botones {
+      form .cuadro__campo--botones {
         justify-content: flex-end; }
-      .formulario .boton {
+      form .boton {
         width: 25%; } }
