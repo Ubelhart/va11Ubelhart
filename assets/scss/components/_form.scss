@@ -1,13 +1,13 @@
 form {
   width: 85vw;
   margin: 0 auto;
-  .cuadro{
-    @extend .cuadro__campo;
+  .frame{
+    @extend .frame__field;
     padding: $espacio * 1.5;
     gap: $espacio;
     border: 3px double $colorPrimario;
     border-radius: 0.3em;
-    &__campo {
+    &__field {
       display: flex;
       flex-direction: column;
     }
@@ -15,26 +15,26 @@ form {
       padding: $espacio / 15.8 0;
       border-radius: 0.3em;
     }
-    &__campo--botones {
+    &__field--buttons {
       gap: $espacio;
     }
   }
   @media only screen and (min-width: 768px) {
     width: 70vw;
-    .cuadro__campo--botones {
+    .frame__field--buttons {
       flex-direction: row;
-    }
-    .boton {
-      width: 50%;
+      .button {
+        width: 50%;
+      }
     }
   }
   @media only screen and (min-width: 992px) {
     width: 55vw;
-    .cuadro__campo--botones {
+    .frame__field--buttons {
       justify-content: flex-end;
-    }
-    .boton {
-      width: 25%;
+      .button {
+        width: 25%;
+      }
     }
   }
 }

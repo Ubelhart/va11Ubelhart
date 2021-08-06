@@ -176,48 +176,41 @@ header {
   background: linear-gradient(90deg, #5dbda4 0%, #40ba9a 34%, #29c29a 66%, #00ba8a 100%);
   position: sticky;
   top: 0;
-  height: 19.5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   z-index: 2; }
-  header .logo {
-    height: 7em; }
-    header .logo__imagen {
+  header .navibar .logo {
+    height: 8.95em;
+    margin-left: 1em; }
+    header .navibar .logo__img {
       height: 100%; }
-  header nav {
-    width: 100%; }
-    header nav ul {
-      text-align: center; }
-      header nav ul a {
-        display: block;
-        width: inherit;
-        padding: 0.5em;
-        transition: all 250ms; }
-      header nav ul .activo,
-      header nav ul a:hover {
-        background-color: #721500;
-        color: #5ef6d0; }
+  header .navibar button {
+    margin-right: 1em; }
+  header .navibar ul {
+    text-align: center; }
+    header .navibar ul a {
+      display: block;
+      width: inherit;
+      padding: 0.5em;
+      transition: all 250ms; }
+    header .navibar ul .acti,
+    header .navibar ul a:hover {
+      background-color: #721500;
+      color: #5ef6d0; }
   @media only screen and (min-width: 768px) {
     header {
-      height: 7em;
-      flex-direction: row;
-      justify-content: space-between; }
-      header .logo {
-        margin-left: 1em; }
-      header nav {
-        width: 50%;
-        margin-right: 1em; }
-        header nav ul {
-          display: flex;
-          justify-content: space-between; }
-          header nav ul a {
-            border-radius: .3em; }
-          header nav ul .activo {
-            border-radius: .3em; } }
-  @media only screen and (min-width: 768px) and (min-width: 992px) {
-    header nav {
-      width: 40%; } }
+      height: 7.6em; }
+      header .navibar {
+        justify-content: space-between; }
+        header .navibar__collapse {
+          flex-grow: 0; }
+          header .navibar__collapse ul {
+            display: flex; }
+            header .navibar__collapse ul .acti,
+            header .navibar__collapse ul a {
+              border-radius: .3em;
+              margin-right: 1em; } }
+    @media only screen and (min-width: 768px) and (min-width: 992px) {
+      header .navibar {
+        justify-content: space-around; } }
 
 footer {
   font-weight: 700;
@@ -227,12 +220,12 @@ footer {
   align-items: center;
   gap: 0.5em;
   padding: 0.5em; }
-  footer .mapa h3 {
+  footer .map h3 {
     margin: 0;
     margin-bottom: 0.25em; }
-  footer .mapa a {
+  footer .map a {
     font-weight: 400; }
-  footer .mapa a:hover {
+  footer .map a:hover {
     color: #000; }
   footer p {
     font-size: 1.6rem; }
@@ -246,44 +239,44 @@ footer {
     footer {
       justify-content: space-around; } }
 
-.boton {
+.button {
   padding: 0.83333em;
   border: none;
   border-radius: 0.3em;
   background-color: #ff6846;
   color: #f1f8f2;
   transition: all 250ms; }
-  .boton:hover {
+  .button:hover {
     padding: 1em;
     background-color: #721500; }
 
 form {
   width: 85vw;
   margin: 0 auto; }
-  form .cuadro {
+  form .frame {
     padding: 1.5em;
     gap: 1em;
     border: 3px double #721500;
     border-radius: 0.3em; }
-    form .cuadro__campo, form .cuadro {
+    form .frame__field, form .frame {
       display: flex;
       flex-direction: column; }
-    form .cuadro__select {
+    form .frame__select {
       padding: 0.06329em 0;
       border-radius: 0.3em; }
-    form .cuadro__campo--botones {
+    form .frame__field--buttons {
       gap: 1em; }
   @media only screen and (min-width: 768px) {
     form {
       width: 70vw; }
-      form .cuadro__campo--botones {
+      form .frame__field--buttons {
         flex-direction: row; }
-      form .boton {
-        width: 50%; } }
+        form .frame__field--buttons .button {
+          width: 50%; } }
   @media only screen and (min-width: 992px) {
     form {
       width: 55vw; }
-      form .cuadro__campo--botones {
+      form .frame__field--buttons {
         justify-content: flex-end; }
-      form .boton {
-        width: 25%; } }
+        form .frame__field--buttons .button {
+          width: 25%; } }

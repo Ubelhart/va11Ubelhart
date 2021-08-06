@@ -18,15 +18,20 @@
 <body>
 
   <header>
-    <a class="logo" href="../index.html"><img class="logo__imagen" src="../media/img/logo.png" alt="logo"></a>
-    <nav>
-      <ul>
-        <li><a href="../index.html">INICIO</a></li>
-        <li><a href="./galeria.html">GALERÍA</a></li>
-        <li><a href="./videos.html">VIDEOS</a></li>
-        <li><a href="./precios.html">PRECIOS</a></li>
-        <li><a class="activo" href="./contacto.html">CONTACTO</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-light navibar">
+      <a class="navbar-brand logo" href="../index.html"><img class="logo__img" src="../media/img/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navibar__collapse" id="navbarSupportedContent">
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="./galeria.html">GALERÍA</a></li>
+          <li><a href="./videos.html">VIDEOS</a></li>
+          <li><a href="./precios.html">PRECIOS</a></li>
+          <li><a class="acti" href="./contacto.html">CONTACTO</a></li>
+        </ul>
+    </div>
     </nav>
   </header>
 
@@ -34,23 +39,23 @@
   <main>
     <h1>contacto - haz tu consulta</h1>
     <form>
-      <fieldset class="cuadro">
+      <fieldset class="frame">
         <legend>Formulario</legend>
-        <div class="cuadro__campo">
+        <div class="frame__field">
           <label for="name">Nombre:</label>
-          <input class="campo" type="text" id="name" placeholder="Tu Nombre">
+          <input class="field" type="text" id="name" placeholder="Tu Nombre">
         </div>
-        <div class="cuadro__campo">
+        <div class="frame__field">
           <label for="last">Apellido:</label>
-          <input class="campo" type="text" id="last" placeholder="Tu Apellido">
+          <input class="field" type="text" id="last" placeholder="Tu Apellido">
         </div>
-        <div class="cuadro__campo">
+        <div class="frame__field">
           <label for="email">E-mail:</label>
-          <input class="campo" type="email" id="email" placeholder="Tu E-mail">
+          <input class="field" type="email" id="email" placeholder="Tu E-mail">
         </div>
-        <div class="cuadro__campo">
+        <div class="frame__field">
           <label for="gender">Genero:</label>
-          <select class="cuadro__select" name="" id="gender">
+          <select class="frame__select" name="" id="gender">
             <option value="Elige" disabled selected>Elige una opción</option>
             <option value="Hombre">Hombre</option>
             <option value="Mujer">Mujer</option>
@@ -60,13 +65,13 @@
           <label for="news">¿Desea recibir el Newsletter?:</label>
           <input type="checkbox" id="news">
         </div>
-        <div class="cuadro__campo">
+        <div class="frame__field">
           <label for="help">Consulta:</label>
           <textarea name="" id="help" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
         </div>
-        <div class="cuadro__campo cuadro__campo--botones">
-          <input class="boton" type="reset">
-          <input class="boton" type="submit">
+        <div class="frame__field frame__field--buttons">
+          <input class="button" type="reset">
+          <input class="button" type="submit">
         </div>
       </fieldset>
     </form>
@@ -75,7 +80,7 @@
 
 
   <footer>
-    <div class="mapa">
+    <div class="map">
       <h3>MAPA</h3>
       <ul>
         <li><a href="../index.html">INICIO</a></li>
