@@ -80,57 +80,57 @@ ul, p {
   to {
     display: #721500; } }
 
-.inicio__parrafo {
+.home__paragraph {
   background-color: #5ef6d0;
   padding: 0.5em;
   border-radius: 0 1em;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.75); }
-  .inicio__parrafo--borde {
+  .home__paragraph--border {
     border-radius: 1em 0; }
 
 @media only screen and (min-width: 768px) {
-  .inicio__seccion {
+  .home__section {
     display: flex;
     align-items: center;
     gap: 1em; }
-  .inicio__seccion--dos {
-    flex-direction: row-reverse; }
-  .inicio__calesita, .inicio__parrafo {
+    .home__section--reverse {
+      flex-direction: row-reverse; }
+  .home__carousel, .home__paragraph {
     flex-basis: 50%; } }
 
 @media only screen and (min-width: 992px) {
-  .inicio {
+  .home {
     display: flex;
     gap: 1em; }
-    .inicio__secciones {
+    .home__sections {
       flex-basis: 50%; }
-    .inicio__seccion {
+    .home__section {
       flex-direction: column; } }
 
-.galeria {
+.gallery {
   overflow: hidden; }
-  .galeria__contenedor {
+  .gallery__container {
     display: grid;
     justify-content: center;
     gap: 1em; }
-  .galeria__imagen {
+  .gallery__img {
     transition: all 500ms; }
-    .galeria__imagen:hover {
+    .gallery__img:hover {
       transform: scale(1.2);
       z-index: 1; }
-  .galeria__cuerpo {
+  .gallery__body {
     background-color: #ff6846; }
   @media only screen and (min-width: 768px) {
-    .galeria__contenedor {
+    .gallery__container {
       grid-template-columns: repeat(2, 1fr); } }
   @media only screen and (min-width: 992px) {
-    .galeria__contenedor {
+    .gallery__container {
       grid-template-columns: repeat(3, 1fr); } }
 
 .videos {
   display: grid;
   gap: 0.5em; }
-  .videos__seccion {
+  .videos__section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,14 +148,14 @@ ul, p {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "video1 video2" "video3 video3";
       justify-items: center; }
-      .videos__seccion--tres {
+      .videos__section--sponsor {
         grid-area: video3;
         width: 50%; }
       .videos__video {
         width: 475px;
         height: 270px; } }
 
-.tabla {
+.price {
   width: 95vw;
   background-color: #ff6846;
   margin: 0 auto;
@@ -167,7 +167,7 @@ ul, p {
   padding: 1em;
   list-style-position: inside;
   justify-items: center; }
-  .tabla h2 {
+  .price h2 {
     margin: 0;
     border: 3px solid;
     padding: 0.5em; }

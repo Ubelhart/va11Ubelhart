@@ -1,34 +1,34 @@
-.inicio {
-  &__parrafo {
+.home {
+  &__paragraph {
     background-color: $colorSecundarioClaro;
     padding: $espacio / 2;
     border-radius: 0 1em;
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
-    &--borde {
+    &--border {
       border-radius: 1em 0;
     }
   }
   @media only screen and (min-width: 768px) {
-    &__seccion {
-    display: flex;
-    align-items: center;
-    gap: $espacio;
+    &__section {
+      display: flex;
+      align-items: center;
+      gap: $espacio;
+      &--reverse {
+        flex-direction: row-reverse;
+      }
     }
-    &__seccion--dos {
-    flex-direction: row-reverse;
-    }
-    &__calesita,
-    &__parrafo {
+    &__carousel,
+    &__paragraph {
       flex-basis: 50%;
     }
   }
   @media only screen and (min-width: 992px) {
     display: flex;
     gap: $espacio;
-    &__secciones {
+    &__sections{
       flex-basis: 50%;
     }
-    &__seccion {
+    &__section {
       flex-direction: column;
     }
   }
