@@ -13,7 +13,12 @@
     border-radius: 1em;
   }
   &__video {
-    @include medidas(426px, 240px);
+    @include medidas(326px, 180px);
+  }
+  @media only screen and (min-width: 576px) {
+    &__video {
+      @include medidas(426px, 240px);
+    }
   }
   @media only screen and (min-width: 768px ) {
     &__video {
@@ -30,7 +35,7 @@
       width: 50%;
     }
     &__video {
-      @include medidas(475px, 270px);
+      @include medidas(476px, 270px);
     }
   }
 }

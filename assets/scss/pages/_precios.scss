@@ -1,18 +1,28 @@
 .price {
-  width: 95vw;
+  width: 90vw;
   background-color: $colorPrimarioClaro;
   margin: 0 auto;
   border: 3px solid;
-  border-radius: 1em;
+  border-radius: $espacio;
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
   row-gap: $espacio;
-  padding: $espacio;
-  list-style-position: inside;
-  justify-items: center;
-  h2 {
-    margin: 0;
-    border: 3px solid;
-    padding: $espacio / 2;
+  &__title {
+    text-transform: uppercase;
+    color: $colorSecundario;
+    width: 100%;
+    border-bottom: 3px solid;
+    border-right: 3px solid;
+    &--border {
+      border-right: 0;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    width: 75vw;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 60vw;
   }
 }
