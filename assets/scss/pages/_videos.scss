@@ -1,4 +1,4 @@
-@mixin medidas( $ancho, $alto) {
+@mixin medidas( $ancho, $alto ) {
   width: $ancho;
   height: $alto;
 }
@@ -13,16 +13,16 @@
     border-radius: 1em;
   }
   &__video {
-    @include medidas(326px, 180px);
+    @include medidas( 326px, 180px );
   }
-  @media only screen and (min-width: 576px) {
+  @media only screen and (min-width: 576px ) {
     &__video {
-      @include medidas(426px, 240px);
+      @include medidas( 426px, 240px );
     }
   }
   @media only screen and (min-width: 768px ) {
     &__video {
-      @include medidas(640px, 360px);
+      @include medidas( 640px, 360px );
     }
   }
   @media only screen and (min-width: 992px ) {
@@ -35,7 +35,7 @@
       width: 50%;
     }
     &__video {
-      @include medidas(476px, 270px);
+      @include medidas( 476px, 270px );
     }
   }
 }

@@ -13,23 +13,20 @@ body {
 main {
   padding: $espacio;
 }
+@mixin fuente( $color, $tamanio, $nombre, $duracion ) {
+  color: $color;
+  font-size: $tamanio;
+  animation-name: $nombre;
+  animation-duration: $duracion;
+}
 h1 {
-  color: $colorPrimario;
-  font-size: 4rem;
-  animation-name: titulo;
-  animation-duration: 800ms;
+  @include fuente( $colorPrimario, 4rem, titulo, 800ms );
 }
 h2 {
-  color: $colorSecundario;
-  font-size: 3.4rem;
-  animation-name: subtitulo;
-  animation-duration: 800ms;
+  @include fuente( $colorSecundario, 3.4rem, subtitulo, 800ms );
 }
 h3 {
-  color: $colorPrimario;
-  font-size: 2.8rem;
-  animation-name: subtitulo2;
-  animation-duration: 800ms;
+  @include fuente( $colorPrimario, 2.8rem, subtitulo2, 800ms );
 }
 p {
   font-size: 2.2rem;
