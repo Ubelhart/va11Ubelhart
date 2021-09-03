@@ -1,5 +1,5 @@
 form {
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
   .frame{
     @extend .frame__field;
@@ -20,7 +20,7 @@ form {
     }
   }
   @media only screen and (min-width: 768px) {
-    width: 75vw;
+    width: 60vw;
     .frame__field--buttons {
       flex-direction: row;
       .button {
@@ -29,11 +29,11 @@ form {
     }
   }
   @media only screen and (min-width: 992px) {
-    width: 60vw;
+    width: 40vw;
     .frame__field--buttons {
       justify-content: flex-end;
       .button {
-        width: 25%;
+        width: 35%;
       }
     }
   }

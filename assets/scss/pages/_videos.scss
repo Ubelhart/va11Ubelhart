@@ -4,20 +4,23 @@
 }
 .videos {
   display: grid;
-  gap: $espacio / 2;
+  gap: $espacio * 2;
   &__section {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $colorSecundarioClaro;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
     border-radius: 1em;
+    row-gap: $espacio;
+    padding: $espacio 0;
   }
   &__video {
     @include medidas( 326px, 180px );
   }
   @media only screen and (min-width: 576px ) {
     &__video {
-      @include medidas( 426px, 240px );
+      @include medidas( 476px, 270px );
     }
   }
   @media only screen and (min-width: 768px ) {
@@ -35,7 +38,7 @@
       width: 50%;
     }
     &__video {
-      @include medidas( 476px, 270px );
+      @include medidas( 426px, 240px );
     }
   }
 }

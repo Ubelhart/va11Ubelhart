@@ -1,15 +1,3 @@
-body {
-  background: linear-gradient(180deg, rgba(241,248,242,1) 0%, rgba(222,228,223,1) 100%);
-  font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
-  min-height: 100vh;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  gap: $espacio;
-  overflow-y: scroll;
-}
 main {
   padding: $espacio;
 }
@@ -18,6 +6,10 @@ main {
   font-size: $tamanio;
   animation-name: $nombre;
   animation-duration: $duracion;
+  text-transform: uppercase;
+  text-align: center;
+  margin: $espacio;
+  font-weight: 700;
 }
 h1 {
   @include fuente( $colorPrimario, 4rem, titulo, 800ms );
@@ -31,12 +23,6 @@ h3 {
 p {
   font-size: 2.2rem;
   text-align: center;
-}
-h1, h2, h3 {
-  text-transform: uppercase;
-  text-align: center;
-  margin: $espacio;
-  font-weight: 700;
 }
 a {
   text-decoration: none;

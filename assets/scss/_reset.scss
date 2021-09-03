@@ -9,3 +9,15 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+body {
+  background: linear-gradient(180deg, rgba(241,248,242,1) 0%, rgba(222,228,223,1) 100%);
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: $espacio;
+  overflow-y: scroll;
+}
